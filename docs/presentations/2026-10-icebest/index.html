@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harnessing AI for a Sustainable Bioindustry: Transforming Drugs, Vaccines, and Diagnostics to Shape Tomorrow&#x27;s Health</title>
+<meta name="description" content="Slides by Arli Aditya Parikesit, 4th ICEBEST Conference, UTM Jakarta, 10 October 2026.">
+<style>
+:root {
+  --bg: #eef2f1; --card: #ffffff; --ink: #1b2725; --muted: #5b6b68;
+  --accent: #0f7a6c; --accent-soft: #d8eeea; --line: #d5dedc;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1514; --card: #18211f; --ink: #e5eeec; --muted: #9db0ac;
+    --accent: #4cc7b4; --accent-soft: #1f3a35; --line: #2a3734;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-snap-type: y proximity; scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 18px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+
+.slide { scroll-snap-align: start; min-height: 100vh; min-height: 100svh;
+  max-width: 1200px; margin: 0 auto; padding: 48px 16px;
+  display: flex; flex-direction: column; justify-content: center; gap: 20px; }
+.slide + .slide { border-top: 1px solid var(--line); }
+h1, h2 { margin: 0; line-height: 1.2; text-wrap: balance; }
+h1 { font-size: clamp(1.8rem, 4.2vw, 3rem); }
+h2 { font-size: clamp(1.4rem, 3vw, 2.2rem); padding-bottom: 12px; border-bottom: 3px solid var(--accent); }
+
+.content { display: grid; gap: 28px; align-items: center; }
+.split .content { grid-template-columns: 3fr 2fr; }
+.split.many .content { grid-template-columns: 1fr 1fr; }
+.media-left .media { order: -1; }
+.text ul { margin: 0; padding-left: 1.2em; }
+.text li { margin: .45em 0; }
+.text li::marker { color: var(--accent); }
+.text p { margin: .5em 0; }
+.media { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.media a { flex: 1 1 200px; }
+.media img { width: 100%; height: auto; max-height: 70vh; object-fit: contain;
+  border-radius: 8px; background: #fff; }
+.source { font-size: .8rem; color: var(--muted); }
+.source p { margin: .2em 0; }
+
+.cover { text-align: center; align-items: center; }
+.cover .sub { color: var(--muted); max-width: 60ch; }
+.cover .sub p { margin: .3em 0; }
+.logos { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; align-items: center; }
+.logos a { flex: 0 1 160px; }
+.logos img { width: 100%; height: auto; }
+
+.counter { position: fixed; right: 16px; bottom: 16px; background: var(--card); color: var(--muted);
+  border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; font-size: .85rem; }
+
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+  .split .content, .split.many .content { grid-template-columns: 1fr; }
+  .media-left .media { order: 0; }
+  .slide { min-height: auto; justify-content: flex-start; }
+}
+@media print {
+  html { scroll-snap-type: none; }
+  .slide { min-height: auto; break-after: page; }
+  .counter { display: none; }
+}
+</style>
+</head>
+<body>
+<main>
+<section class="slide cover" id="s1">
+<div class="logos"><a href="img/s01-1.png"><img src="img/s01-1.png" width="1600" height="960" alt="Slide 1 figure 1" loading="lazy"></a><a href="img/s01-2.png"><img src="img/s01-2.png" width="1600" height="1052" alt="Slide 1 figure 2" loading="lazy"></a><a href="img/s01-3.png"><img src="img/s01-3.png" width="1600" height="960" alt="Slide 1 figure 3" loading="lazy"></a><a href="img/s01-4.png"><img src="img/s01-4.png" width="1600" height="960" alt="Slide 1 figure 4" loading="lazy"></a><a href="img/s01-5.png"><img src="img/s01-5.png" width="1600" height="960" alt="Slide 1 figure 5" loading="lazy"></a></div>
+<h1>Harnessing AI for a Sustainable Bioindustry: Transforming Drugs, Vaccines, and Diagnostics to Shape Tomorrow&#x27;s Health</h1>
+<div class="sub"><p>A Comprehensive Overview of AI Applications in Modern Healthcare Innovation</p>
+<p>Arli Aditya Parikesit</p>
+<p>Professor of Bioinformatics Streaming, Department of Biotechnology, School of Health and Life Sciences. i3L University</p>
+<p>Visiting Professor, School of Business and Management, i3L University</p>
+<p>Presented at 4th ICEBEST Conference, UTM Jakarta</p>
+<p>Jakarta, 10th of October 2026</p></div>
+</section>
+<section class="slide split" id="s2">
+<h2>Agenda</h2>
+<div class="content"><div class="text"><ul><li>Introduction to AI in Bioindustry</li><li>Current State of Healthcare Innovation</li><li>AI Applications in Drug Discovery</li><li>AI in Vaccine Development</li><li>AI-Powered Diagnostics</li><li>Sustainability and Environmental Impact</li><li>Regulatory and Ethical Considerations</li><li>Future Outlook and Opportunities</li><li>Call to Action</li></ul></div><div class="media"><a href="img/s02-1.jpg"><img src="img/s02-1.jpg" width="1600" height="1600" alt="AI-generated figure representing a professional agenda for bioindustry" loading="lazy"></a></div></div>
+
+</section>
+<section class="slide split" id="s3">
+<h2>Introduction to AI in Bioindustry</h2>
+<div class="content"><div class="text"><ul><li>Definition of bioindustry and its scope</li><li>Evolution of biotechnology in healthcare</li><li>Role of artificial intelligence in modern medicine</li><li>Key drivers for AI adoption in bioindustry</li><li>Market size and growth projections</li><li>Major stakeholders and players</li></ul></div><div class="media"><a href="img/s03-1.jpg"><img src="img/s03-1.jpg" width="1600" height="1600" alt="Concept illustration of AI in the bioindustry: robotics, data analysis, sustainable agriculture, labs, and pharmaceuticals" loading="lazy"></a></div></div>
+
+</section>
+<section class="slide split media-left" id="s4">
+<h2>Current State of Healthcare Innovation (1)</h2>
+<div class="content"><div class="text"><ul><li>Traditional drug development takes 10-15 years and costs $2.6 billion</li><li>High failure rates in clinical trials (90% of drugs fail)</li><li>Limited personalization in treatment approaches</li><li>Slow diagnostic processes and delayed interventions</li><li>Regulatory challenges and lengthy approval processes</li><li>Growing demand for sustainable and accessible healthcare solutions</li></ul></div><div class="media"><a href="img/s04-1.jpg"><img src="img/s04-1.jpg" width="1600" height="400" alt="AI-generated figure: Current State of Healthcare Innovation" loading="lazy"></a></div></div>
+
+</section>
+<section class="slide split" id="s5">
+<h2>Current State of Healthcare Innovation (COVID-19)</h2>
+<div class="content"><div class="text"><ul><li>COVID-19 pandemics enabled fast-track innovation</li><li>“off the grid” research was reactivated fast to develop vaccine, drug , and diagnostics</li><li>“no contact economy” enabled innovations in chatbots development</li><li>“ Great Reset” happens. Online stores, restaurant, and ride hailing blossoming. Conventional business was out.</li></ul></div><div class="media"><a href="img/s05-1.jpg"><img src="img/s05-1.jpg" width="920" height="450" alt="Slide 5 figure 1" loading="lazy"></a></div></div>
+
+</section>
+<section class="slide split media-left" id="s6">
+<h2>Case Study: COVID-19 Pandemic</h2>
+<div class="content"><div class="text"><p>The Role of Bioinformatics during the COVID-19 Pandemic.</p>
+<p>Bioinformatics has a significant role in the development of drugs, vaccines, and of course COVID-19 diagnostics.</p>
+<p>Condemn “racial slurs” that are anti-science, and marginalize certain groups with baseless accusations.</p></div><div class="media"><a href="img/s06-1.jpg"><img src="img/s06-1.jpg" width="1094" height="1353" alt="Slide 6 figure 1" loading="lazy"></a></div></div>
+<footer class="source"><p>Source: Jakarta Post clipping, February 14, 2020</p></footer>
+</section>
+<section class="slide" id="s7">
+<h2>The Convergence of AI and Biotechnology</h2>
+<div class="content"><div class="text"><ul><li>AI revolutionizing traditional biotechnology approaches</li><li>Machine learning accelerating biological research and development</li><li>Integration of computational power with biological systems</li><li>Data-driven insights transforming healthcare innovation</li><li>Bridging the gap between digital technology and life sciences</li><li>Creating new possibilities for precision medicine and therapeutics</li></ul></div></div>
+
+</section>
+<section class="slide split" id="s8">
+<h2>Alphafold and “Nobel Laurates of Google”</h2>
+<div class="content"><div class="text"><ul><li>Jumper and Nassabis are researcher from Google deepmind</li><li>They won Nobel Prize in Chemistry for their contribution in protein structure prediction</li><li>Their AI-driven database, alphafold, enables novel approach in drug, vaccine, and diagnostics design.</li></ul></div><div class="media"><a href="img/s08-1.jpg"><img src="img/s08-1.jpg" width="600" height="400" alt="Slide 8 figure 1" loading="lazy"></a></div></div>
+
+</section>
+<section class="slide split" id="s9">
+<h2>AI Applications in Drug Discovery</h2>
+<div class="content"><div class="text"><ul><li>Machine learning for target identification</li><li>Molecular design and optimization</li><li>Predictive modeling for drug efficacy</li><li>Virtual screening of compound libraries</li><li>ADMET prediction (Absorption, Distribution, Metabolism, Excretion, Toxicity)</li><li>Clinical trial optimization and patient stratification</li></ul></div><div class="media"><a href="img/s09-1.jpg"><img src="img/s09-1.jpg" width="1600" height="830" alt="Slide 9 figure 1" loading="lazy"></a></div></div>
+
+</section>
+<section class="slide" id="s10">
+<h2>AI-Driven Drug Design Success Stories</h2>
+<div class="content"><div class="text"><ul><li>Atomwise&#x27;s AI platform discovered potential treatments for Ebola in days instead of years</li><li>Insilico Medicine&#x27;s AI identified novel drug targets for aging-related diseases</li><li>BenevolentAI&#x27;s machine learning approach led to COVID-19 treatment discoveries</li><li>Recursion Pharmaceuticals uses AI to analyze cellular images for drug repurposing</li><li>DeepMind&#x27;s AlphaFold breakthrough in protein structure prediction accelerates drug development</li><li>AI-designed drugs entering clinical trials: DSP-1181 for obsessive-compulsive disorder</li><li>Reduced drug discovery timelines from 10-15 years to 3-5 years through AI integration</li></ul></div></div>
+
+</section>
+<section class="slide split" id="s11">
+<h2>AI in Vaccine Development and Innovation</h2>
+<div class="content"><div class="text"><ul><li>AI-powered antigen identification and epitope mapping for targeted vaccine design</li><li>Machine learning algorithms optimize vaccine formulations and adjuvant selection</li><li>Predictive modeling for immune response and vaccine efficacy assessment</li><li>Gates Foundation&#x27;s TB vaccine trials in Indonesia using AI-guided development</li><li>mRNA vaccine platforms accelerated by AI-driven sequence optimization</li><li>AI analysis of viral mutations enables rapid vaccine adaptation (COVID-19 variants)</li><li>Computational immunology predicts population-level vaccine effectiveness</li><li>Reduced vaccine development timelines from years to months through AI integration</li></ul></div><div class="media"><a href="img/s11-1.jpg"><img src="img/s11-1.jpg" width="1600" height="1600" alt="AI-generated illustration of Bill Gates in a global health context" loading="lazy"></a></div></div>
+
+</section>
+<section class="slide split" id="s12">
+<h2>Bill Gates and Pharmaceutical Industry</h2>
+<div class="content"><div class="text"><ul><li>Bill Gates created Gates foundation as his philanthropic initiatives in health care problem</li><li>Providing significant amount of research grant for developing countries</li><li>He is known to have strong business interest in pharmaceutical industry, especially vaccine</li><li>Some partners: Pfizer, Merck, Johnson &amp; Johnson, GlaxoSmithKline (GSK)</li></ul></div><div class="media"><a href="img/s12-1.jpg"><img src="img/s12-1.jpg" width="850" height="400" alt="The pace of progress in biology creates a foundation that naturally gets picked up by the biotech and pharmaceutical industry to solve rich-world diseases. This is attractive science. It&#x27;s science that people want to work on. - Bill Gates" loading="lazy"></a></div></div>
+
+</section>
+<section class="slide" id="s13">
+<h2>AI-Powered Diagnostic Technologies (1)</h2>
+<div class="content"><div class="text"><ul><li>Computer vision for medical imaging analysis: X-rays, MRIs, CT scans, and pathology slides</li><li>AI-based early disease detection with higher accuracy than traditional methods</li><li>Point-of-care diagnostic devices powered by machine learning algorithms</li><li>Liquid biopsy technologies using AI to detect circulating tumor DNA</li><li>Smartphone-based diagnostic tools for remote and underserved populations</li><li>Real-time pathogen identification and antimicrobial resistance prediction</li><li>AI-driven biomarker discovery for personalized medicine approaches</li><li>Automated laboratory systems reducing diagnostic turnaround times by 70%</li></ul></div></div>
+
+</section>
+<section class="slide split" id="s14">
+<h2>AI-Powered Diagnostic Technologies (2. Local Context)</h2>
+<div class="content"><div class="text"><ul><li>Some keyplayers in Indonesia for this domain: IBM Watson Health, Google Health, Microsoft Corporation, Siemens Healthineers, and Philips Healthcare</li><li>Some newcomers: Halodoc, Kalbe Farma’s EMOS, Nexmedis, Serenic.ai</li><li>Government initiatives: Kemkes (ministry of health) developing SATUSEHAT platform, and BRIN, more catered for basic research.</li></ul></div><div class="media"><a href="img/s14-1.jpg"><img src="img/s14-1.jpg" width="1000" height="667" alt="Indonesian Diagnostic Labs Market" loading="lazy"></a></div></div>
+
+</section>
+<section class="slide split" id="s15">
+<h2>Sustainable Manufacturing in Bioindustry</h2>
+<div class="content"><div class="text"><ul><li>Green chemistry principles reducing environmental impact of pharmaceutical production</li><li>Bioreactor optimization using AI for energy-efficient manufacturing processes</li><li>Waste reduction through circular economy approaches in drug manufacturing</li><li>Renewable energy integration in biopharmaceutical facilities</li><li>Biodegradable packaging solutions for pharmaceutical products</li></ul></div><div class="media"><a href="img/s15-1.jpg"><img src="img/s15-1.jpg" width="690" height="400" alt="Slide 15 figure 1" loading="lazy"></a></div></div>
+
+</section>
+<section class="slide" id="s16">
+<h2>Policy and Regulatory Frameworks</h2>
+<div class="content"><div class="text"><ul><li>FDA&#x27;s AI/ML-based Software as Medical Device (SaMD) regulatory pathway</li><li>European Medicines Agency (EMA) guidelines for AI in drug development</li><li>WHO recommendations for ethics and governance of AI in health</li><li>National AI strategies incorporating healthcare priorities (US, EU, China, UK)</li><li>Data protection regulations (GDPR, HIPAA) impacting AI healthcare applications</li><li>International harmonization efforts for AI medical device standards (ICH, ISO)</li><li>Intellectual property frameworks for AI-generated pharmaceutical innovations</li><li>Clinical trial regulations adapted for AI-assisted drug development processes</li><li>Indonesia: UU Perlindungan Data Pribadi, Kepmenkes HK.01.07/MENKES/505/2024 (BGSI)</li></ul></div></div>
+
+</section>
+<section class="slide" id="s17">
+<h2>Global Health Impact and Accessibility</h2>
+<div class="content"><div class="text"><ul><li>Gates Foundation&#x27;s TB vaccine trials in Indonesia leveraging AI for population health</li><li>Affordable AI-powered diagnostic tools for low-resource healthcare settings</li><li>Telemedicine platforms expanding access to specialized medical expertise globally</li><li>Mobile health applications for disease surveillance and prevention in developing countries</li><li>Open-source AI frameworks democratizing access to advanced healthcare technologies</li></ul></div></div>
+
+</section>
+<section class="slide" id="s18">
+<h2>Future Trends and Emerging Technologies</h2>
+<div class="content"><div class="text"><ul><li>Quantum computing applications in molecular simulation and drug discovery</li><li>Advanced AI models (GPT-4, Claude) for scientific literature analysis and hypothesis generation</li><li>Blockchain technology for secure pharmaceutical supply chain management</li><li>Edge computing for real-time health monitoring and diagnostic devices</li><li>Synthetic biology combined with AI for novel therapeutic compound creation</li></ul></div></div>
+
+</section>
+<section class="slide" id="s19">
+<h2>Challenges and Barriers to Implementation (1)</h2>
+<div class="content"><div class="text"><ul><li>High computational costs and infrastructure requirements for AI implementation</li><li>Regulatory uncertainty and lengthy approval processes for AI-based medical products .</li><li>Skilled workforce shortage in AI and bioinformatics expertise</li><li>Patient privacy concerns and cybersecurity risks in AI-driven healthcare</li><li>Resistance to change from traditional healthcare practitioners and institutions</li><li>Funding gaps between research development and commercial deployment</li></ul></div></div>
+
+</section>
+<section class="slide split" id="s20">
+<h2>Challenges and Barriers to Implementation  (2. Energy Source)</h2>
+<div class="content"><div class="text"><ul><li>Only developed country excels in AI research, as they have abundant energy source, including from renewables</li><li>Interesting fact emerges that only countries that have nuclear power plant, namely United States (OpenAI, and xAI), China (Deepseek), and France (Mistral), could have strong AI-startup.</li><li>Training big AI models require huge amount of energy, only nuclear power plant and renewable sources (hydro, thermal, solar panel, etc) could provide.</li><li>Indonesia needs to resolve its energy sustainability issue before even thinking to do significant steps in this initiatives.</li></ul></div><div class="media"><a href="img/s20-1.jpg"><img src="img/s20-1.jpg" width="1024" height="1024" alt="Slide 20 figure 1" loading="lazy"></a></div></div>
+
+</section>
+<section class="slide split many" id="s21">
+<h2>CHALLENGES AHEAD (3)</h2>
+<div class="content"><div class="text"><p>Funding termination, abuse, and lack of interest in science will facilitate further dis- and mis-information</p></div><div class="media"><a href="img/s21-1.jpg"><img src="img/s21-1.jpg" width="977" height="1280" alt="Slide 21 figure 1" loading="lazy"></a><a href="img/s21-2.jpg"><img src="img/s21-2.jpg" width="870" height="1510" alt="Slide 21 figure 2" loading="lazy"></a><a href="img/s21-3.jpg"><img src="img/s21-3.jpg" width="1600" height="1242" alt="Slide 21 figure 3" loading="lazy"></a></div></div>
+<footer class="source"><p>Source:</p>
+<p>Harian Kompas, 25 Februari 2025</p>
+<p><a href="https://www.dw.com/en/abuse-elite-scientists-germany-max-planck-society-v2/a-71897800">https://www.dw.com/en/abuse-elite-scientists-germany-max-planck-society-v2/a-71897800</a></p>
+<p><a href="https://www.nature.com/articles/d41586-025-00703-1">https://www.nature.com/articles/d41586-025-00703-1</a></p></footer>
+</section>
+<section class="slide" id="s22">
+<h2>Investment and Funding Opportunities</h2>
+<div class="content"><div class="text"><ul><li>Venture capital investments in AI-driven biotech startups reaching $15+ billion annually</li><li>Government funding programs (NIH SBIR, NSF, EU Horizon Europe, DIKTI, BRIN) for AI healthcare research</li><li>Corporate partnerships between tech giants (Google, Microsoft, IBM) and pharmaceutical companies</li><li>IPO market trends for AI-powered diagnostic and therapeutic companies</li><li>Strategic acquisitions of AI biotech firms by major pharmaceutical corporations</li></ul></div></div>
+
+</section>
+<section class="slide split" id="s23">
+<h2>Ethical Considerations and Social Impact</h2>
+<div class="content"><div class="text"><ul><li>Algorithmic bias in AI-driven healthcare decisions affecting diverse populations</li><li>Data privacy and consent issues in genomic and health data collection</li><li>Transparency and explainability requirements for AI medical decision-making</li><li>Environmental sustainability of AI computational infrastructure in healthcare</li><li>Ethical frameworks for AI experimentation in vulnerable populations</li></ul></div><div class="media"><a href="img/s23-1.jpg"><img src="img/s23-1.jpg" width="372" height="524" alt="Slide 23 figure 1" loading="lazy"></a></div></div>
+
+</section>
+<section class="slide split media-left" id="s24">
+<h2>Case Study: Artificial Intelligence and the Arts</h2>
+<div class="content"><div class="text"><p>AI is claimed to be the “silver bullet” that solves all problems.</p>
+<p>Hollywood artists protest that gratuitous use of AI threatens their jobs</p>
+<p>They demand that movie studios provide fair compensation, if AI is used</p></div><div class="media"><a href="img/s24-1.jpg"><img src="img/s24-1.jpg" width="1490" height="1310" alt="Slide 24 figure 1" loading="lazy"></a></div></div>
+<footer class="source"><p>Source: <a href="https://www.akurat.co/viral/1302422256/Protes-Artis-Hollywood-Karena-Kecerdasan-Buatan-Haruskah-kita-Khawatir">https://www.akurat.co/viral/1302422256/Protes-Artis-Hollywood-Karena-Kecerdasan-Buatan-Haruskah-kita-Khawatir</a></p></footer>
+</section>
+<section class="slide" id="s25">
+<h2>Global Collaboration and Partnerships</h2>
+<div class="content"><div class="text"><ul><li>Gates Foundation&#x27;s TB vaccine trials in Indonesia leveraging AI-driven patient selection</li><li>WHO-led global health AI initiatives for pandemic preparedness and response</li><li>International consortiums for sharing genomic data and AI models (H3Africa, GA4GH)</li><li>Public-private partnerships between tech giants and pharmaceutical companies</li><li>Academic research networks enabling collaborative AI development (NIH, Wellcome Trust)</li><li>Open-source AI platforms fostering global innovation in drug discovery</li></ul></div></div>
+
+</section>
+<section class="slide" id="s26">
+<h2>Implementation Strategies and Best Practices</h2>
+<div class="content"><div class="text"><ul><li>Phased implementation approach starting with pilot programs and proof-of-concept studies</li><li>Cross-functional team formation including AI experts, domain scientists, and regulatory specialists</li><li>Robust data governance frameworks ensuring quality, security, and compliance standards</li><li>Scalable infrastructure design supporting growing computational and data storage needs</li><li>Performance metrics and KPI establishment for measuring AI impact and ROI</li><li>Iterative improvement processes incorporating user feedback and emerging best practices</li></ul></div></div>
+
+</section>
+<section class="slide" id="s27">
+<h2>Measuring Success and ROI</h2>
+<div class="content"><div class="text"><ul><li>Time-to-market reduction metrics for drug discovery and development processes</li><li>Cost savings analysis comparing AI-assisted vs. traditional research methodologies</li><li>Diagnostic accuracy and sensitivity improvements over conventional methods</li><li>Patient outcome improvements including treatment efficacy and safety profiles</li><li>Revenue generation from AI-enabled products and services in the healthcare market</li></ul></div></div>
+
+</section>
+<section class="slide" id="s28">
+<h2>Future Trends and Emerging Technologies</h2>
+<div class="content"><div class="text"><ul><li>Quantum computing applications for complex molecular modeling and drug optimization</li><li>Integration of AI with CRISPR gene editing for precision medicine and therapeutic development</li><li>Digital twins of biological systems for predictive modeling and personalized treatment strategies</li><li>AI-powered synthetic biology platforms for designing novel biological circuits and organisms</li><li>Augmented reality and AI integration for enhanced surgical procedures and medical training</li><li>Blockchain technology ensuring data integrity and traceability in AI-driven clinical trials</li></ul></div></div>
+
+</section>
+<section class="slide split" id="s29">
+<h2>Preparing for the AI-Driven Future</h2>
+<div class="content"><div class="text"><ul><li>Investment in robust IT infrastructure and cloud computing capabilities for scalable AI deployment</li><li>Strategic partnerships with technology companies, academic institutions, and research organizations</li><li>Development of comprehensive AI governance frameworks and ethical guidelines for responsible innovation</li><li>Fostering a culture of innovation and experimentation while maintaining safety and quality standards</li></ul></div><div class="media"><a href="img/s29-1.jpg"><img src="img/s29-1.jpg" width="1600" height="1600" alt="AI-driven futuristic Jakarta with smart buildings and robots" loading="lazy"></a></div></div>
+
+</section>
+<section class="slide split" id="s30">
+<h2>Proposed Solution</h2>
+<div class="content"><div class="text"><p>Scientists should share popular science content</p>
+<p>Don’t hesitate to use social media (Tik-Tok, Facebook, Instagram, even X)</p>
+<p>Team up with your buddy/colleague for preparing contents</p></div><div class="media"><a href="img/s30-1.jpg"><img src="img/s30-1.jpg" width="1456" height="1572" alt="Slide 30 figure 1" loading="lazy"></a></div></div>
+<footer class="source"><p>Source:</p>
+<p><a href="https://theconversation.com/diskursus-matinya-kepakaran-di-media-sosial-bagaimana-agar-ilmuwan-tak-kalah-pamor-dari-influencer-244970">https://theconversation.com/diskursus-matinya-kepakaran-di-media-sosial-bagaimana-agar-ilmuwan-tak-kalah-pamor-dari-influencer-244970</a></p></footer>
+</section>
+<section class="slide split" id="s31">
+<h2>Proposed Solution: Popular Science Webinar (3)</h2>
+<div class="content"><div class="text"><p>Collaboration with Universitas Negeri Jakarta</p>
+<p>How to use generative AI properly, and how to cite its output</p>
+<p>Encourage faculty and students to use gen AI responsibly</p></div><div class="media"><a href="img/s31-1.jpg"><img src="img/s31-1.jpg" width="1600" height="437" alt="Slide 31 figure 1" loading="lazy"></a></div></div>
+<footer class="source"><p>Source:</p>
+<p><a href="https://www.youtube.com/watch?v=DutAB3R8EWk&amp;t=4934s">https://www.youtube.com/watch?v=DutAB3R8EWk&amp;t=4934s</a></p></footer>
+</section>
+<section class="slide" id="s32">
+<h2>Conclusion and Call to Action</h2>
+<div class="content"><div class="text"><ul><li>AI represents a transformative force in bioindustry with unprecedented potential for innovation</li><li>The convergence of AI with biotechnology will revolutionize drug discovery, vaccine development, and diagnostics</li><li>Organizations must act now to build capabilities, partnerships, and infrastructure for AI adoption</li><li>Regulatory frameworks and ethical guidelines must evolve to support responsible AI innovation</li><li>Investment in workforce development and interdisciplinary collaboration is essential for success</li><li>Time to action is critical - early adopters will gain significant competitive advantages</li></ul></div></div>
+
+</section>
+<section class="slide split media-left" id="s33">
+<h2>References and Resources: Scan this barcode</h2>
+<div class="content"><div class="text"></div><div class="media"><a href="img/s33-1.png"><img src="img/s33-1.png" width="1600" height="1600" alt="Slide 33 figure 1" loading="lazy"></a></div></div>
+
+</section>
+<section class="slide split" id="s34">
+<h2>Thank You</h2>
+<div class="content"><div class="text"><p>Questions &amp; Discussion Contact Information:</p>
+<p>Arli Aditya Parikesit</p>
+<p>Professor of Bioinformatics Streaming</p>
+<p>Department of Biotechnology</p>
+<p>i3L University.</p>
+<p>Email: <a href="mailto:arli.Parikesit@i3l.ac.id">arli.Parikesit@i3l.ac.id</a>. Phone: +622129567888</p>
+<p>Together, we can harness AI to build a sustainable bioindustry that transforms global health outcomes and shapes tomorrow&#x27;s healthcare landscape!</p></div><div class="media"><a href="img/s34-1.jpg"><img src="img/s34-1.jpg" width="720" height="518" alt="Slide 34 figure 1" loading="lazy"></a></div></div>
+
+</section>
+<section class="slide" id="s35">
+<h2>Appendix: Key AI Technologies in Bioindustry</h2>
+<div class="content"><div class="text"><ul><li>Machine Learning Algorithms:<ul><li>Deep Neural Networks for molecular property prediction</li><li>Random Forest for compound classification</li><li>Support Vector Machines for biomarker identification</li></ul></li><li>Natural Language Processing:<ul><li>Literature mining for drug discovery insights</li><li>Clinical trial data extraction and analysis</li><li>Regulatory document processing automation</li></ul></li><li>Computer Vision:<ul><li>Medical imaging analysis for diagnostics</li><li>Microscopy image processing for cell analysis</li><li>Pathology slide interpretation</li></ul></li><li>Reinforcement Learning:<ul><li>Drug dosing optimization</li><li>Treatment protocol development</li><li>Clinical trial design optimization</li></ul></li><li>Graph Neural Networks:<ul><li>Molecular structure analysis</li><li>Protein-protein interaction modeling</li><li>Drug-target interaction prediction</li></ul></li></ul></div></div>
+
+</section>
+<section class="slide" id="s36">
+<h2>Appendix: Glossary of Terms</h2>
+<div class="content"><div class="text"><ul><li>Bioindustry: The sector encompassing biotechnology applications in healthcare, pharmaceuticals, and life sciences</li><li>Machine Learning: AI algorithms that enable computers to learn and improve from experience without explicit programming</li><li>Drug Discovery: The process of identifying and developing new pharmaceutical compounds for therapeutic use</li><li>Biomarkers: Biological indicators used to measure disease presence, progression, or treatment response</li><li>Precision Medicine: Medical approach that customizes treatment based on individual patient characteristics</li><li>QSAR: Quantitative Structure-Activity Relationship - mathematical models predicting biological activity from molecular structure</li><li>Clinical Trials: Research studies testing safety and efficacy of medical treatments in human subjects</li><li>Regulatory Approval: Government authorization required before marketing pharmaceutical products</li><li>Sustainable Development: Meeting present needs without compromising future generations&#x27; ability to meet their needs</li></ul></div></div>
+
+</section>
+<section class="slide" id="s37">
+<h2>Questions and Discussion (QUIZ for Edlink)</h2>
+<div class="content"><div class="text"><ul><li>What specific AI applications are you most excited to implement in your organization?</li><li>How can we address concerns about data privacy and security in AI-driven bioindustry applications?</li><li>What are the biggest barriers to AI adoption in your current work environment?</li><li>How do you envision the role of human expertise evolving alongside AI technologies?</li><li>What regulatory changes would most benefit AI innovation in bioindustry?</li><li>How can we ensure equitable access to AI-powered healthcare solutions globally?</li><li>What partnerships or collaborations would be most valuable for your AI initiatives?</li><li>How do you balance innovation speed with safety and ethical considerations?</li><li>What skills should professionals develop to thrive in an AI-enhanced bioindustry?</li><li>How can we measure the success and impact of AI implementations in healthcare?</li></ul></div></div>
+
+</section>
+</main>
+<div class="counter" aria-live="polite"><span id="cur">1</span> / 37</div>
+<script>
+const slides = [...document.querySelectorAll(".slide")];
+const cur = document.getElementById("cur");
+let idx = 0;
+// a slide is "current" when it crosses the middle of the viewport (works for slides taller than the screen)
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { idx = slides.indexOf(e.target); cur.textContent = idx + 1; }
+}), { rootMargin: "-50% 0px -50% 0px" });
+slides.forEach(s => io.observe(s));
+document.addEventListener("keydown", e => {
+  const step = { ArrowRight: 1, ArrowLeft: -1, PageDown: 1, PageUp: -1, " ": e.shiftKey ? -1 : 1 }[e.key];
+  if (step === undefined || e.altKey || e.ctrlKey || e.metaKey) return;
+  e.preventDefault();
+  slides[Math.max(0, Math.min(slides.length - 1, idx + step))].scrollIntoView();
+});
+</script>
+</body>
+</html>
